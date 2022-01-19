@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Array dan Perulangan
+    </title>
+</head>
+
+<body>
+    <script>
+        var mhs = ["ani", "rendi", "sinta", "nisa"]; //membuat array 
+        document.write("<h3> Daftar Mahasiswa:</h3>");
+        mhs.push("Paijo"); //menambah di belakang 
+        // mhs.splice(2, 1); // menghapus di index 2 sebanyak 1 ke belakang 
+        // delete mhs[1]; //menghapus data inddex 1 (indexnya masih ada)
+        //mhs.pop(); //menghapus index paling belakang 
+        //mhs.shift(); //menghapus index paling depan
+        //mhs = mhs.short(); //mengurutkan 
+        //mhs = mhs.filter(item => item.includes("ni")); //mengfilter
+        document.write("<ol>");
+        for (let i = 0; i < mhs.length; i++) { //mencetak array
+            document.write("<li> " + mhs[i] + "</li>");
+        }
+        document.write("<ol>");
+    </script>
+</body>
+
+</html>

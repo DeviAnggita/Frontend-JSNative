@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Perulanagan Repeat While
+    </title>
+</head>
+
+<body>
+    <script>
+        var ulangi = confirm("Apakah anda ingin mengulang?");
+        var nomor = 0;
+        while (ulangi) {
+            nomor++;
+            var pagar = "#".repeat(nomor) + "<br>";
+            document.write(nomor + " : " + pagar);
+            ulangi = confirm("Jumlah Pagar : " + nomor + " , Apakah Anda ingin mengulang ?");
+        }
+    </script>
+</body>
+
+</html>

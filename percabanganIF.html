@@ -1,0 +1,26 @@
+<html lang=en>
+
+<head>
+    <title>
+        Percabangan If
+    </title>
+</head>
+
+<body>
+    <script>
+        var diskon = 0;
+        var totalBelanja = prompt("Total Belanja ?", 0);
+        var member = confirm("Apakah Anda Member?");
+        if (totalBelanja >= 100000 || member) {
+            diskon = 10 / 100 * totalBelanja;
+            document.write("<h2> Selamat Anda Mendapatkan diskon 10% </h2>");
+            document.write("<h2> Total Belanja Anda Menjadi :" +
+                (totalBelanja - diskon) + "</h2>");
+        } else {
+            document.write("<h2> Total Belanja Anda :" + (totalBelanja) + "</h2)");
+        }
+        document.write("<p> Terrimakasih sudah berbelanja di toko kami <p>");
+    </script>
+</body>
+
+</html>

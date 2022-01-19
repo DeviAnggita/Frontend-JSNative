@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Perulangan Array Do While
+    </title>
+</head>
+
+<body>
+    <script>
+        var mhs = []; //membuat array 
+        var input;
+        var ulangi;
+        do {
+            input = prompt("Silahkan input nama mahasiswa ", "")
+            mhs.push(input); //input array di data paling belakang
+            ulangi = confirm("Ingin menginput lagi ? ");
+        } while (ulangi);
+        document.write("Pilih Mahasiswa : <select>");
+        for (let i = 0; i < mhs.length; i++) { //mencetak array
+            document.write("<option> " + mhs[i] + "</option>");
+        }
+        document.write("</select>")
+    </script>
+</body>
+
+</html>
